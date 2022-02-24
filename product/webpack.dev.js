@@ -9,7 +9,7 @@ module.exports = merge(common, {
   mode: 'development',
   plugins: [
     new ModuleFederationPlugin({
-      name: "core",
+      name: "product",
       filename: "remoteEntry.js",
       remotes: {
         "core": `core@http://localhost:3000/remoteEntry.js`,

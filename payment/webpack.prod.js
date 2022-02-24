@@ -9,7 +9,7 @@ module.exports = merge(common, {
   mode: 'production',
   plugins: [
     new ModuleFederationPlugin({
-      name: "core",
+      name: "payment",
       filename: "remoteEntry.js",
       remotes: {
         "core": `core@https://kart-core.netlify.com/remoteEntry.js`,
