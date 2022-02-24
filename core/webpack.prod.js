@@ -12,9 +12,9 @@ module.exports = merge(common, {
       name: "core",
       filename: "remoteEntry.js",
       remotes: {
-        "core": `core@http://kart-core.netlify.com/remoteEntry.js`,
-        "product": `product@http://kart-product.netlify.com/remoteEntry.js`,
-        "payment": `payment@http://kart-payment.netlify.com/remoteEntry.js`
+        "core": `core@https://kart-core.netlify.com/remoteEntry.js`,
+        "product": `product@https://kart-product.netlify.com/remoteEntry.js`,
+        "payment": `payment@https://kart-payment.netlify.com/remoteEntry.js`
       },
       exposes: {
         "./Button": "./src/components/Button.tsx",
