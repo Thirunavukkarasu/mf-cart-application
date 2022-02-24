@@ -1,6 +1,6 @@
 # mf-cart-application
 
-Micro Frontends apps divided into three React applications.
+Ecommerce Cart Application built using Webpack 5 Module Federation. And these Micro Frontends apps are divided into three React applications.
 
 1. Core - Container Application which handle navigation and states
 2. Product - Product page app where we browse our ecommerce catalog 
