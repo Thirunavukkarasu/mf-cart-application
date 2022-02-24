@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "http://localhost:3002/",
+    publicPath: "auto",
   },
 
   resolve: {
@@ -43,11 +43,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "payment",
       filename: "remoteEntry.js",
-      remotes: {
-        "product": "product@http://localhost:3001/remoteEntry.js",
-        "payment": "payment@http://localhost:3002/remoteEntry.js",
-        "core": "core@http://localhost:3000/remoteEntry.js"
-      },
+      remotes: {},
       exposes: {
         "./PaymentPage": "./src/PaymentPage"
       },
